@@ -6,40 +6,41 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-         enunciado: "Você vê seu futuro mai focado em alcanlar um crago de lidernça ou em desenvelver habilidades especializadas?",
+         enunciado: "Você vê seu futuro mais focado em alcançar um crago de liderança ou em desenvelver habilidades especializadas?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
+                texto: "Cargo de liderança.",
+                afirmacao: "Você valoriza a oportunidade de guiar e inspirar equipes, além de buscar constantemente desafios que permitam desenvolver suas habilidades de gestão e estratégia."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Habilidades especializadas.",
+                afirmacao: "Você acredita que o domínio profundo em uma área específica permite alcançar um nível de excelência que é crucial para resolver problemas complexos e se destacar em seu campo."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Você se imagina mais feliz daqui cinco anos se conquistar um grande objetivo profissional ou se estabelecer um equilíbrio saudável entre vida pessoal e trabalho?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Grande objetivo profissional.",
+                afirmacao: "Você busca impacto significativo em sua área de atuação e está disposta a investir tempo e esforço para alcançar esse objetivo. Você tende a ser motivada por desafios e pela possibilidade de realizar contribuições substanciais para sua carreira e para a sociedade."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Equilibrio saudável entre a vida pessoal e trabalho.",
+                afirmacao: "Você valoriza tanto o sucesso profissional quanto o bem-estar pessoal.  Busca harmonizar suas responsabilidades e conquistas profissionais com tempo de qualidade para família, amigos e atividades pessoais, acreditando que essa abordagem promove uma vida mais satisfatória e sustentável a longo prazo."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Qual sua principal prioridade para o futuro?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Ter um impacto significativo na sua area de atuação.",  
+                afirmacao: "Você é motivada por metas ambiciosas e pela vontade de transformar seu campo de trabalho, dedicando-se a inovações e soluções que possam deixar um legado duradouro.  Está disposta a enfrentar desafios e trabalhar intensamente para alcançar resultados que tragam avanços notáveis para sua área e para a sociedade."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Garantir uma vida pessoal rica e saatisfatoria.",
+                afirmacao: "Você prioriza o equilíbrio entre suas atividades profissionais e suas paixões pessoais, buscando tempo para cultivar relacionamentos significativos, desenvolver interesses e desfrutar de momentos de lazer.  Acredita que uma vida plena e gratificante é alcançada ao nutrir tanto seu bem-estar emocional quanto seus vínculos pessoais."
             }
         ]
     },
@@ -78,7 +79,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "VOCÊ É";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
